@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Login</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesoeet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+<body>
+	<!-- header section start-->
+	<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        
+
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="vet.html">Veteriner</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">İlanlar</a>
+
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item" href="sahip.html">Sahiplendirme</a></li>
+
+                        <li><a class="dropdown-item" href="lost.html">Kayıp </a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Oteller</a>
+
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item" href="KediOteli.html">Kedi Oteli</a></li>
+
+                        <li><a class="dropdown-item" href="KopekOteli.html">Köpek Oteli</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">İLETİŞİM</a>
+                </li>
+            </ul>
+
+            <div class="ms-4">
+                <a href="signin.html" class="btn custom-btn custom-border-btn smoothscroll">Giriş Yap</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+  <!-- header section end-->
+  <!-- login section start-->
+  
+  <div class="login_section">
+     <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">İlan ver</h5>
+            <form class="form-signin">
+              <div class="form-group">
+                <label for="exampleFormControlSelect">İlan seçiniz:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Kayıp İlanı</option>
+                  <option>Sahiplendirme İlanı</option>
+                </select>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Fotoğraf</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+              <br>
+               <div class="col-lg-8 col-12 mx-auto">
+                
+
+                <form action="#" method="post" class="custom-form contact-form" role="form">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 ">
+                            <div class="form-floating">
+                                <input type="text" name="full-name" id="full-name" class="form-control"
+                                    placeholder="Full Name" required="">
+
+                                <label for="floatingInput">İsim</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 ">
+                          <div class="form-floating">
+                              <input type="text" name="Phone" id="Phone" class="form-control"
+                                  placeholder="Telefon" required="">
+
+                              <label for="floatingInput">Telefon Numarası</label>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 ">
+                        <div class="form-floating">
+                            <input type="text" name="Pet" id="Pet" class="form-control"
+                                placeholder="Patili dostumuzun adı" required="">
+
+                            <label for="floatingInput">Patili dostumuzun adı</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 ">
+                      <div class="form-floating">
+                          <input type="text" name="Map" id="Map" class="form-control"
+                              placeholder="Lokasyon" required="">
+
+                          <label for="floatingInput">Lokasyon</label>
+                      </div>
+                  </div>
+
+                        
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                    class="form-control" placeholder="Email address" required="">
+
+                                <label for="floatingInput">Email adresi</label>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-lg-12 col-12">
+                            
+                            <div class="form-floating">
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Describe message here"></textarea>
+
+                                <label for="floatingTextarea">Bilgileri  buraya yazabilirsiniz</label>
+                            </div>
+                            <br><br>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-lg-4 col-12 ms-4">
+                            <button type="submit" class="form-control">Gönder</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Log In</button>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Log In with Google</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Log In with Facebook</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <!-- login section end-->
+
+  <!-- footer section start-->
+  
+  <!-- footer section end-->
+  <!-- copyright section start-->
+  
+  <!-- copyright section end-->
+
+
+    <!-- Javascript files-->
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Rol seçildiğinde olay dinleyici
+      $('#exampleFormControlSelect1').change(function(){
+        var selectedRole = $(this).val();
+
+        // Eğer "Pati Dostu" seçildiyse formu gizle
+        if(selectedRole === 'Pati Dostu') {
+          $('.form-group').hide();
+        } else {
+          // Diğer durumlarda formu göster
+          $('.form-group').show();
+        }
+      });
+    });
+  </script>
+      <script>
+      $(document).ready(function(){
+      $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         })});
+         </script>
+         
+         
+
+     
+</body>
+</html>
