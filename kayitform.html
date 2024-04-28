@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>iletisim</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+    <!--
+
+TemplateMo 584 Pod Talk
+
+https://templatemo.com/tm-584-pod-talk
+
+-->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<style>
+    .select2-container--default .select2-selection--single {
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        height: 57px;
+        padding: 4px 5px;   
+    }
+</style>
+</head>
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                
+
+                
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Anasayfa</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="vet.html">Veteriner</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">İlanlar</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="sahip.html">Sahiplendirme</a></li>
+
+                                <li><a class="dropdown-item" href="lost.html">Kayıp </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Oteller</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="KediOteli.html">Kedi Oteli</a></li>
+
+                                <li><a class="dropdown-item" href="KopekOteli.html">Köpek Oteli</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">İLETİŞİM</a>
+                        </li>
+                    </ul>
+                    <div class="ms-4">
+                        <a href="signin.html" class="btn custom-btn custom-border-btn smoothscroll">Giriş Yap</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center">
+
+                        <h2 class="mb-0">Kayıt Formu</h2>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <section class="contact-section section-padding pt-0">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                     <form action="#" method="post" class="custom-form contact-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12"> 
+                                    <div class="form-floating mt-0">
+                                        <select class="form-control" id="roleSelect" onchange="toggleVisibility();">
+                                            <option value="secim">Rol seçmek için tıkla</option>
+                                            <option value="Otel Sahibi">Otel Sahibi</option>
+                                            <option value="Veteriner">Veteriner</option>
+                                            <option value="Pati Dostu">Pati Dostu</option>
+                                        </select>
+                                        <label for="roleSelect">Rol </label>
+                                    </div>                                   
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating mt-0">
+                                        <input type="name" name="name" id="name" pattern="[^ @]*@[^ @]*"
+                                            class="form-control" placeholder="İsim" required="">
+
+                                        <label for="floatingInput">İsim</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating mt-0">
+                                        <input type="phone" name="phone" id="phone" pattern="[^ @]*@[^ @]*"
+                                            class="form-control" placeholder="Telefon Numarası" required="">
+
+                                        <label for="floatingInput">Telefon Numarası</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelTypeSection">
+                                    <div class="form-floating mt-0">
+                                        <select class="form-control" id="hotelTypeSelect">
+                                            <option value="secim" >Otel cinsini seçmek için tıkla</option>
+                                            <option value="Kedi">Kedi</option>
+                                            <option value="Köpek">Köpek</option>
+                                            <option value="Kedi ve Köpek">Kedi ve Köpek</option>
+                                        </select>
+                                        <label for="hotelTypeSelect">Otel cinsi</label>
+                                    </div>                                   
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelNameSection">
+                                    <div class="form-floating mt-0">
+                                        <input type="text" name="Otelname" id="Otelname" class="form-control" placeholder="Otel adı" required="">
+                                        <label for="Otelname">Otel Adı</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating mt-0">
+                                        <select class="form-control select2" id="Konum" name="Konum" required="">
+                                          
+                                        </select>
+                                        <label for="Konum"></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="documentUploadSection"> 
+                                    <div class="form-group mb-4">
+                                        <label for="exampleFormControlFile1">Belge</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
+                                    </div>                                   
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group mb-4">
+                                        <label for="exampleFormControlFile1">Profil Fotoğrafı</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-12">
+                                    
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Describe message here"></textarea>
+
+                                        <label for="floatingTextarea">Bilgileri buraya girebilirsiniz</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto">
+                                    <button type="submit" class="form-control">Kaydet</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                  >
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="site-footer-thumb mb-4 pb-2">
+                        <div class="d-flex flex-wrap">
+                            
+                        </div>
+                    </div>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-2 col-md-3 col-12">
+                    
+                </div>
+
+                <div class="col-lg-7 col-md-9 col-12">
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Homepage</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Help Center</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <p class="copyright-text mb-0">Copyright © 2036 
+                        <br><br>
+                        
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+       function toggleVisibility() {
+    var selectedRole = document.getElementById("roleSelect").value;
+    var uploadSection = document.getElementById("documentUploadSection");
+    var hotelNameSection = document.getElementById("hotelNameSection");
+    var hotelTypeSection = document.getElementById("hotelTypeSection");
+
+    // Reset visibility
+    uploadSection.style.display = 'none';
+    hotelNameSection.style.display = 'none';
+    hotelTypeSection.style.display = 'none';
+
+    switch (selectedRole) {
+        case "Otel Sahibi":
+            uploadSection.style.display = 'block';
+            hotelNameSection.style.display = 'block';
+            hotelTypeSection.style.display = 'block';
+            break;
+        case "Veteriner":
+            uploadSection.style.display = 'block';
+            break;
+        case "Pati Dostu":
+            // No action needed, everything remains hidden
+            break;
+    }
+}
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const selectElement = document.getElementById('Konum');
+    const sehirler = [
+        'Adana', 'Adıyaman', 'Afyonkarahisar', 'Ağrı', 'Amasya', 'Ankara', 'Antalya', 'Artvin',
+        'Aydın', 'Balıkesir', 'Bilecik', 'Bingöl', 'Bitlis', 'Bolu', 'Burdur', 'Bursa', 'Çanakkale',
+        'Çankırı', 'Çorum', 'Denizli', 'Diyarbakır', 'Edirne', 'Elazığ', 'Erzincan', 'Erzurum', 'Eskişehir',
+        'Gaziantep', 'Giresun', 'Gümüşhane', 'Hakkâri', 'Hatay', 'Isparta', 'İçel (Mersin)', 'İstanbul', 'İzmir',
+        'Kars', 'Kastamonu', 'Kayseri', 'Kırklareli', 'Kırşehir', 'Kocaeli', 'Konya', 'Kütahya', 'Malatya',
+        'Manisa', 'Kahramanmaraş', 'Mardin', 'Muğla', 'Muş', 'Nevşehir', 'Niğde', 'Ordu', 'Rize', 'Sakarya',
+        'Samsun', 'Siirt', 'Sinop', 'Sivas', 'Tekirdağ', 'Tokat', 'Trabzon', 'Tunceli', 'Şanlıurfa', 'Uşak',
+        'Van', 'Yozgat', 'Zonguldak', 'Aksaray', 'Bayburt', 'Karaman', 'Kırıkkale', 'Batman', 'Şırnak', 'Bartın',
+        'Ardahan', 'Iğdır', 'Yalova', 'Karabük', 'Kilis', 'Osmaniye', 'Düzce'
+    ];
+
+    // Şehirleri <select> içine option olarak ekleyelim
+    sehirler.forEach(function(sehir) {
+        const option = document.createElement('option');
+        option.value = sehir;
+        option.textContent = sehir;
+        selectElement.appendChild(option);
+    });
+
+    // Select2 pluginini başlat
+    $('.select2').select2({
+        placeholder: 'Bir şehir seçin',
+        allowClear: true
+    });
+});
+
+
+    </script> 
+
+    
+
+</body>
+
+</html>

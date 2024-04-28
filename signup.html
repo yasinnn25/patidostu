@@ -106,46 +106,21 @@
               <h4>Üye misiniz?</h4>
               <h4><a href="signin.html">Giriş Yap</a></h4>
             </div>
-            <form class="form-signin">
-              <div class="form-group">
-                <label for="exampleFormControlSelect">Rol seçiniz:</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                   <option>İşletme Sahibi</option>
-                   <option>Veteriner</option>
-                   <option>Pati Dostu</option>
+            <!-- Form Tagı İçinde Değişiklik -->
+<form class="form-signin" action="kayitform.html" method="get">
+  <div class="form-label-group">
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputEmail">Email address</label>
+  </div>
 
-                </select>
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="exampleFormControlFile1">Belge</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-              </div>
-              <br>
-              <div class="form-label-group">
-                <input type="Phone" id="inputPhone" class="form-control" placeholder="Telefon Numarası" required autofocus>
-                <label for="inputPhone">Telefon Numarası</label>
-              </div>
-              <div class="form-label-group">
-                <input type="Map" id="inputMap" class="form-control" placeholder="Lokasyon" required autofocus>
-                <label for="inputPhone">Lokasyon</label>
-              </div>
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">Email address</label>
-              </div>
+  <div class="form-label-group">
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <label for="inputPassword">Password</label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Kayıt Ol</button>
+  <hr class="my-4">
+</form>
 
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
-
-              
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Kayıt Ol</button>
-              <hr class="my-4">
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Log In with Google</button>
-              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Log In with Facebook</button>
-            </form>
           </div>
         </div>
       </div>
