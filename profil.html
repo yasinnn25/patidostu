@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>iletisim</title>
+    <title>Profil</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,8 +43,34 @@ https://templatemo.com/tm-584-pod-talk
             padding: 4px 5px;   
         }
     </style>
-    
 
+<style>
+    .select2-container--default .select2-selection--single {
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        height: 57px;
+        padding: 4px 5px;   
+    }
+
+    /* Added body CSS */
+    body {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    }
+</style>
+
+    
+<style>
+    .select2-container--default .select2-selection--single {
+        border: 1px solid #aaa;
+        border-radius: 6px;
+        height: 57px;
+        padding: 4px 5px;   
+    }
+    #section_2 img {
+        width: 400px; 
+        height: 500px; 
+    }
+</style>
 
 </head>
 
@@ -94,11 +120,16 @@ https://templatemo.com/tm-584-pod-talk
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">İLETİŞİM</a>
                         </li>
-                    </ul>
 
-                    <div class="ms-4">
-                        <a href="profil.html" class="btn custom-btn custom-border-btn smoothscroll">Profil</a>
-                    </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="index.html">Çıkış yap</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -128,7 +159,7 @@ https://templatemo.com/tm-584-pod-talk
 
                             <p class="d-flex border-bottom pb-3 mb-4">
                                 <strong class="d-inline me-4">İsim:</strong>
-                                <span>Ali Veli</span>
+                                <span>Ali Dursun</span>
                             </p>
 
                             <p class="d-flex border-bottom pb-3 mb-4">
@@ -138,19 +169,23 @@ https://templatemo.com/tm-584-pod-talk
 
                             <p class="d-flex border-bottom pb-3 mb-4">
                                 <strong class="d-inline me-4">Email:</strong>
-                                <a href="#">inquiry@pet.co</a>
+                                <a href="#">patidostu@gmail.com</a>
                             </p>
 
                             <p class="d-flex">
                                 <strong class="d-inline me-4">Konum:</strong>
-                                <span>Buca/İZMİR</span>
+                                <span>İZMİR</span>
                             </p>
+                            <a href="profilayar.html">
+                                <button>Düzenle</button>
+                            </a>
                         </div>
                     </div>
+                    
 
                     <div class="col-lg-5 col-12 mt-5 mt-lg-0">
                         <img class="kullanıcı"
-                            src="images/profile/lostdog1.jpg"
+                            src="images/staff-5.jpg"
                             width="40%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -158,77 +193,84 @@ https://templatemo.com/tm-584-pod-talk
                 </div>
             </div>
         </section>
+
         <section class="contact-section section-padding pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-12 mx-auto">
                         <div class="section-title-wrap mb-5">
-                            <h4 class="section-title">Otel</h4>
+                            <h4 class="section-title">Otellerim</h4>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
-        <section class="latest-podcast-section section-padding pb-0" id="section_2">
+       
+        <section class="section-padding" id="section_2">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 col-12">
-                        <div class="section-title-wrap mb-5">
-                            <h4 class="section-title">Bornova</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3 col-12">
-                                <div class="custom-block-icon-wrap">
-                                    <div class="custom-block-image-wrap custom-block-image-detail-page">
-                                        <img src="images/podcast/dog-pensions-19.png" class="custom-block-image1 img-fluid1" alt="Open Modal Image" >
-                                    </div>
+
+                    
+
+                    <div class="col-lg-5 col-12 mt-0 mt-lg-0">
+                        <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                    
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/podcast/dog-pensions-19.png" class="d-block w-100" alt="Staff Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/otel2.jpg" class="d-block w-100" alt="Staff Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/otel3.webp" class="d-block w-100" alt="Staff Image 3">
                                 </div>
                             </div>
+                    
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
 
-                            <div class="col-lg-9 col-12">
-                                <div class="custom-block-info">
-                                   
+                            <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
 
-                                    <h2 class="mb-2">Zen Pet Hotel</h2>
-
-                                    <p> Patili dostlarımızı sevgiyle misafir ediyoruz</p>
-
-                                    <p>Bize 7/24 ulaşabilirsiniz</p>
-
-                                   
-
-                                    <div
-                                        class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
-                                        <div class="d-flex mb-3 mb-lg-0 mb-md-0">
-                                            
-
-                                            <p>
-                                                Sevgi Yalın
-                                                <img src="images/verified.png" class="verified-image img-fluid" alt="">
-                                                <strong>İşletme Sahibi</strong>
-                                            </p>
-                                        </div>
-
-                                        <ul class="social-icon ms-lg-auto ms-md-auto">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-phone"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-map-fill"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    
-                                </div>
-                            </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-5 col-12 pe-lg-5">
+                        <div class="contact-info">
+                            <h3 class="mb-1">Zen Pet Hotel</h3>
+                            <h5 class="mb-4">Köpek Oteli</h5>
+                            <p>Evcil patili dostlarımızı sevgiyle misafir ediyoruz.Bize 7/24 ulaşabilirsiniz</p>
+                            <p class="d-flex border-bottom pb-3 mb-4">
+                                <strong class="d-inline me-4">Fiyat:</strong>
+                                <span>500 TL</span>
+                            </p>
+                            <p class="d-flex border-bottom pb-3 mb-4">
+                                <strong class="d-inline me-4">Sahip:</strong>
+                                <span>Ahmet Dursun</span>
+                            </p>
+                            <p class="d-flex border-bottom pb-3 mb-4">
+                                <strong class="d-inline me-4">Telefon:</strong>
+                                <span>0 545 445 47 47</span>
+                            </p>
+                            <p class="d-flex">
+                                <strong class="d-inline me-4">Konum:</strong>
+                                <span>İZMİR</span>
+                            </p>
+                            <a href="otelayar.html">
+                                <button>Düzenle</button>
+                            </a>
+                                <button style="background-color: red;">Sil</button>
+                        </div>
+                    </div>
+                    
+
                 </div>
             </div>
         </section>
@@ -246,24 +288,73 @@ https://templatemo.com/tm-584-pod-talk
           
         
 
-        <section class="topics-section section-padding pb-0" id="section_3">
+        <section class="section-padding" id="section_2">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                        <div class="custom-block custom-block-overlay">
-                            <img src="images/profile/lostdog1.jpg"
-                                class="custom-block-image1 img-fluid" alt="">
-                            <div class="custom-block-info custom-block-overlay-info">
-                                <h5 class="mb-1">
-                                        Karabas
-                                </h5>
-                                <p>spdvmosdmv spodvmsodmvl psdvmsdmv spodvmosmdv</p>
-                                <p class="badge mb-0"> Buca</p>
-                                <p class="badge mb-0">50 0521 213 13 21</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-12 mt-0 mt-lg-0">
+                        <div id="adsCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
                             </div>
+                    
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/golden1.webp" class="d-block w-100" alt="Staff Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/golden2.jpg" class="d-block w-100" alt="Staff Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/golden3.jpg" class="d-block w-100" alt="Staff Image 3">
+                                </div>
+                            </div>
+                    
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#adsCarousel" data-bs-slide="prev">
+                            <button class="carousel-control-next" type="button" data-bs-target="#adsCarousel" data-bs-slide="next">
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 pe-lg-5">
+                        <div class="contact-info">
+                            <h3 class="mb-1">Altın</h3>
+                            <h5 class="mb-4">Golden</h5>
+                            <p >Yabancılardan korkan uslu bir köpektir.Eğer gördüyseniz lütfen benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin</p>
+                            <p class="d-flex border-bottom pb-3 mb-4">
+                                <strong class="d-inline me-4">Sahip:</strong>
+                                <span>Ahmet Dursun</span>
+                            </p>
+                            <p class="d-flex border-bottom pb-3 mb-4">
+                                <strong class="d-inline me-4">Tasma:</strong>
+                                <span>Var</span>
+                            </p>
+                            <p class="d-flex border-bottom pb-3 mb-4">
+                                <strong class="d-inline me-4">Yaş:</strong>
+                                <span>3-5 arası</span>
+                            </p>
+                            <p class="d-flex border-bottom pb-3 mb-4">
+                                <strong class="d-inline me-4">Telefon:</strong>
+                                <span>0 545 445 47 47</span>
+                            </p>
+                            <p class="d-flex">
+                                <strong class="d-inline me-4">Konum:</strong>
+                                <span>İZMİR</span>
+                            </p>
+                            <a href="ilanayar.html">
+                                <button>Düzenle</button>
+                            </a>
+                            <button class="complete-button">Tamamlandı</button>
+                            <button style="background-color: red;">Sil</button>
                         </div>
                     </div>
                     
+
                 </div>
             </div>
         </section>
@@ -306,6 +397,18 @@ https://templatemo.com/tm-584-pod-talk
                                             <option value="köpek">Köpek</option>
                                         </select>
                                         <label for="pet-type">Evcil Hayvan Cinsi</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating mt-0">
+                                        <select name="pet-type" id="pet-type" class="form-control">
+                                            <option value="secim">seçmek için tıkla</option>
+                                            <option value="kedi">Buldog</option>
+                                            <option value="köpek">Labrador</option>
+                                            <option value="köpek">Golden</option>
+
+                                        </select>
+                                        <label for="pet-type">Türü</label>
                                     </div>
                                 </div>
 
@@ -454,12 +557,68 @@ https://templatemo.com/tm-584-pod-talk
     // Select2 pluginini başlat
     $('.select2').select2({
         placeholder: 'Bir şehir seçin',
+        dropdownParent: $('#Konum').parent(),
         allowClear: true
     });
 });
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Existing JavaScript code ...
 
-
-    </script> 
+        // Event listeners for delete buttons
+        document.querySelectorAll('button[style="background-color: red;"]').forEach(button => {
+            button.addEventListener('click', function() {
+                Swal.fire({
+                  title: "Emin misin?",
+                  text: "Bu işlem geri alınamaz!",
+                  icon: "warning",
+                  showCancelButton: true,
+                  confirmButtonColor: "#3085d6",
+                  cancelButtonColor: "#d33",
+                  confirmButtonText: "Evet,sil!",
+                  cancelButtonText: "İptal" 
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    Swal.fire({
+                      title: "Silindi!",
+                      icon: "success"
+                    });
+                  }
+                });
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Event listeners for "Tamamlandı" buttons using the class
+        document.querySelectorAll('.complete-button').forEach(button => {
+            button.addEventListener('click', function() {
+                Swal.fire({
+                  title: "Emin misiniz?",
+                  text: "Bu işlem geri alınamaz!",
+                  icon: "warning",
+                  showCancelButton: true,
+                  confirmButtonColor: "#3085d6",
+                  cancelButtonColor: "#d33",
+                  confirmButtonText: "Evet, tamamla!",
+                  cancelButtonText: "İptal"
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    Swal.fire({
+                      title: "Tamamlandı!",
+                      text: "İşleminiz başarıyla tamamlandı.",
+                      icon: "success"
+                    });
+                  }
+                });
+            });
+        });
+    });
+</script>
 
 
 

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kayıtform</title>
+    <title>ilanayar</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +113,7 @@ https://templatemo.com/tm-584-pod-talk
 
                     <div class="col-lg-12 col-12 text-center">
 
-                        <h2 class="mb-0">Kayıt Formu</h2>
+                        <h2 class="mb-0">İlan Ayarları </h2>
                     </div>
 
                 </div>
@@ -126,15 +126,14 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="col-lg-8 col-12 mx-auto">
                      <form action="#" method="post" class="custom-form contact-form" role="form">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12"> 
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelTypeSection">
                                     <div class="form-floating mt-0">
-                                        <select class="form-control" id="roleSelect" onchange="toggleVisibility();">
-                                            <option value="secim">Rol seçmek için tıkla</option>
-                                            <option value="Otel Sahibi">Otel Sahibi</option>
-                                            <option value="Veteriner">Veteriner</option>
-                                            <option value="Pati Dostu">Pati Dostu</option>
+                                        <select class="form-control" id="hotelTypeSelect">
+                                            <option value="secim" >seçmek için tıkla</option>
+                                            <option value="Kedi">Kedi</option>
+                                            <option value="Köpek">Köpek</option>
                                         </select>
-                                        <label for="roleSelect">Rol </label>
+                                        <label for="hotelTypeSelect">İlan türü</label>
                                     </div>                                   
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
@@ -142,74 +141,72 @@ https://templatemo.com/tm-584-pod-talk
                                         <input type="name" name="name" id="name" 
                                             class="form-control" placeholder="İsim" required="">
 
-                                        <label for="floatingInput">İsim</label>
+                                        <label for="floatingInput">Evcil hayvanın ismi</label>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelTypeSection">
                                     <div class="form-floating mt-0">
-                                        <input type="phone" name="phone" id="phone" 
-                                            class="form-control" placeholder="Telefon Numarası" required="">
-
-                                        <label for="floatingInput">Telefon Numarası</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelTypeSection">
-                                    <div class="form-floating mt-0">
-                                        <select class="form-control" id="hotelTypeSelect">
-                                            <option value="secim" >Otel cinsini seçmek için tıkla</option>
+                                        <select class="form-control" id="TypeSelect">
+                                            <option value="secim" >seçmek için tıkla</option>
                                             <option value="Kedi">Kedi</option>
                                             <option value="Köpek">Köpek</option>
-                                            <option value="Kedi ve Köpek">Kedi ve Köpek</option>
                                         </select>
-                                        <label for="hotelTypeSelect">Otel cinsi</label>
+                                        <label for="hotelTypeSelect">Evcil hayvanın cinsi</label>
                                     </div>                                   
                                 </div>
-                                
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelNameSection">
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelTypeSection">
                                     <div class="form-floating mt-0">
-                                        <input type="text" name="Otelname" id="Otelname" class="form-control" placeholder="Otel adı" required="">
-                                        <label for="Otelname">Otel Adı</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="priceSelect">
-                                    <div class="form-floating mt-0">
-                                        <select class="form-control" id="priceSelect">
+                                        <select class="form-control" id="TypeSelect">
                                             <option value="secim" >seçmek için tıkla</option>
-                                            <option value="fiyat">500 TL</option>
-                                            <option value="fiyat">1000 TL</option>
+                                            <option value="Kedi">Bulldog</option>
+                                            <option value="Köpek">Labrador</option>
+                                            <option value="Köpek">Golden</option>
                                         </select>
-                                        <label for="hotelTypeSelect">Fiyat</label>
+                                        <label for="hotelTypeSelect">Evcil hayvanın ırkı</label>
                                     </div>                                   
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelTypeSection">
                                     <div class="form-floating mt-0">
-                                        <select class="form-control select2" id="Konum" name="Konum" required="">
-                                          
+                                        <select class="form-control" id="hotelTypeSelect">
+                                            <option value="secim" >seçmek için tıkla</option>
+                                            <option value="Kedi">Var</option>
+                                            <option value="Köpek">Yok</option>
+                                            
                                         </select>
-                                        <label for="Konum"></label>
-                                    </div>
+                                        <label for="hotelTypeSelect">Tasması var mı?</label>
+                                    </div>                                   
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="documentUploadSection"> 
-                                    <div class="form-group mb-4">
-                                        <label for="exampleFormControlFile1">Belge</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelTypeSection">
+                                    <div class="form-floating mt-0">
+                                        <select class="form-control" id="hotelTypeSelect">
+                                            <option value="secim" >seçmek için tıkla</option>
+                                            <option value="yas">0-6 aylık</option>
+                                            <option value="yas">6-12 aylık</option>
+                                            <option value="yas">1-3 yaş</option>
+                                            <option value="yas">3-5 yaş</option>
+                                            <option value="yas">5+ </option>
+                                            
+                                        </select>
+                                        <label for="hotelTypeSelect">Kaç yaşında</label>
                                     </div>                                   
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-group mb-4">
-                                        <label for="exampleFormControlFile1">Profil Fotoğrafı</label>
+                                        <label for="exampleFormControlFile1">İlan Fotoğrafı</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-12" id="textareaSection">
+                                <div class="col-lg-12 col-12">
+                                    
                                     <div class="form-floating">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Describe message here"></textarea>
+
                                         <label for="floatingTextarea">Bilgileri buraya girebilirsiniz</label>
                                     </div>
                                 </div>
-                                
                                  <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Kayıt Ol</button>
+                                    <button type="submit" class="form-control">Güncelle</button>
                                 </div>
                                  
                             </div>
@@ -278,39 +275,7 @@ https://templatemo.com/tm-584-pod-talk
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      function toggleVisibility() {
-    var selectedRole = document.getElementById("roleSelect").value;
-    var uploadSection = document.getElementById("documentUploadSection");
-    var hotelNameSection = document.getElementById("hotelNameSection");
-    var hotelTypeSection = document.getElementById("hotelTypeSection");
-    var priceSelectSection = document.getElementById("priceSelect");
-    var textareaSection = document.getElementById("textareaSection"); // New line
-
-    // Reset visibility
-    uploadSection.style.display = 'none';
-    hotelNameSection.style.display = 'none';
-    hotelTypeSection.style.display = 'none';
-    priceSelectSection.style.display = 'none';
-    textareaSection.style.display = 'block'; // Default show
-
-    switch (selectedRole) {
-        case "Otel Sahibi":
-            uploadSection.style.display = 'block';
-            hotelNameSection.style.display = 'block';
-            hotelTypeSection.style.display = 'block';
-            priceSelectSection.style.display = 'block';
-            break;
-        case "Veteriner":
-            uploadSection.style.display = 'block';
-            break;
-        case "Pati Dostu":
-            textareaSection.style.display = 'none'; // Hide for Pati Dostu
-            break;
-    }
-}
-
-    </script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {

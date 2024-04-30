@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kayıtform</title>
+    <title>profilduzenle</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +113,7 @@ https://templatemo.com/tm-584-pod-talk
 
                     <div class="col-lg-12 col-12 text-center">
 
-                        <h2 class="mb-0">Kayıt Formu</h2>
+                        <h2 class="mb-0">Profil Ayarları</h2>
                     </div>
 
                 </div>
@@ -126,20 +126,9 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="col-lg-8 col-12 mx-auto">
                      <form action="#" method="post" class="custom-form contact-form" role="form">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12"> 
-                                    <div class="form-floating mt-0">
-                                        <select class="form-control" id="roleSelect" onchange="toggleVisibility();">
-                                            <option value="secim">Rol seçmek için tıkla</option>
-                                            <option value="Otel Sahibi">Otel Sahibi</option>
-                                            <option value="Veteriner">Veteriner</option>
-                                            <option value="Pati Dostu">Pati Dostu</option>
-                                        </select>
-                                        <label for="roleSelect">Rol </label>
-                                    </div>                                   
-                                </div>
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating mt-0">
-                                        <input type="name" name="name" id="name" 
+                                        <input type="name" name="name" id="name"
                                             class="form-control" placeholder="İsim" required="">
 
                                         <label for="floatingInput">İsim</label>
@@ -147,39 +136,19 @@ https://templatemo.com/tm-584-pod-talk
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating mt-0">
-                                        <input type="phone" name="phone" id="phone" 
+                                        <input type="mail" name="mail" id="mail" pattern="[^ @]*@[^ @]*"
+                                            class="form-control" placeholder="Email" required="">
+
+                                        <label for="floatingInput">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating mt-0">
+                                        <input type="phone" name="phone" id="phone" pattern="[^ @]*@[^ @]*"
                                             class="form-control" placeholder="Telefon Numarası" required="">
 
                                         <label for="floatingInput">Telefon Numarası</label>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelTypeSection">
-                                    <div class="form-floating mt-0">
-                                        <select class="form-control" id="hotelTypeSelect">
-                                            <option value="secim" >Otel cinsini seçmek için tıkla</option>
-                                            <option value="Kedi">Kedi</option>
-                                            <option value="Köpek">Köpek</option>
-                                            <option value="Kedi ve Köpek">Kedi ve Köpek</option>
-                                        </select>
-                                        <label for="hotelTypeSelect">Otel cinsi</label>
-                                    </div>                                   
-                                </div>
-                                
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelNameSection">
-                                    <div class="form-floating mt-0">
-                                        <input type="text" name="Otelname" id="Otelname" class="form-control" placeholder="Otel adı" required="">
-                                        <label for="Otelname">Otel Adı</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="priceSelect">
-                                    <div class="form-floating mt-0">
-                                        <select class="form-control" id="priceSelect">
-                                            <option value="secim" >seçmek için tıkla</option>
-                                            <option value="fiyat">500 TL</option>
-                                            <option value="fiyat">1000 TL</option>
-                                        </select>
-                                        <label for="hotelTypeSelect">Fiyat</label>
-                                    </div>                                   
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating mt-0">
@@ -189,11 +158,12 @@ https://templatemo.com/tm-584-pod-talk
                                         <label for="Konum"></label>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="documentUploadSection"> 
-                                    <div class="form-group mb-4">
-                                        <label for="exampleFormControlFile1">Belge</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
-                                    </div>                                   
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating mt-0">
+                                       
+                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                            <label for="inputPassword">Parola</label>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-group mb-4">
@@ -201,17 +171,10 @@ https://templatemo.com/tm-584-pod-talk
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-12" id="textareaSection">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
-                                        <label for="floatingTextarea">Bilgileri buraya girebilirsiniz</label>
-                                    </div>
+                                <div class="col-lg-4 col-12 ms-auto pt-3">
+                                    <button type="submit" class="form-control">Güncelle</button>
                                 </div>
-                                
-                                 <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Kayıt Ol</button>
-                                </div>
-                                 
+
                             </div>
                         </form>
                     </div>
@@ -278,39 +241,7 @@ https://templatemo.com/tm-584-pod-talk
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      function toggleVisibility() {
-    var selectedRole = document.getElementById("roleSelect").value;
-    var uploadSection = document.getElementById("documentUploadSection");
-    var hotelNameSection = document.getElementById("hotelNameSection");
-    var hotelTypeSection = document.getElementById("hotelTypeSection");
-    var priceSelectSection = document.getElementById("priceSelect");
-    var textareaSection = document.getElementById("textareaSection"); // New line
-
-    // Reset visibility
-    uploadSection.style.display = 'none';
-    hotelNameSection.style.display = 'none';
-    hotelTypeSection.style.display = 'none';
-    priceSelectSection.style.display = 'none';
-    textareaSection.style.display = 'block'; // Default show
-
-    switch (selectedRole) {
-        case "Otel Sahibi":
-            uploadSection.style.display = 'block';
-            hotelNameSection.style.display = 'block';
-            hotelTypeSection.style.display = 'block';
-            priceSelectSection.style.display = 'block';
-            break;
-        case "Veteriner":
-            uploadSection.style.display = 'block';
-            break;
-        case "Pati Dostu":
-            textareaSection.style.display = 'none'; // Hide for Pati Dostu
-            break;
-    }
-}
-
-    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {

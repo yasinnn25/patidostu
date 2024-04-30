@@ -1,50 +1,29 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Kayıtform</title>
-
+    <title>OtelAyar</title>
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-icons.css">
-
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
     <link href="css/templatemo-pod-talk.css" rel="stylesheet">
-    <!--
-
-TemplateMo 584 Pod Talk
-
-https://templatemo.com/tm-584-pod-talk
-
--->
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-<style>
-    .select2-container--default .select2-selection--single {
-        border: 1px solid #aaa;
-        border-radius: 6px;
-        height: 57px;
-        padding: 4px 5px;   
-    }
-</style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <style>
+        .select2-container--default .select2-selection--single {
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            height: 57px;
+            padding: 4px 5px;   
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
 </head>
 
 <body>
@@ -53,10 +32,6 @@ https://templatemo.com/tm-584-pod-talk
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                
-
-                
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -113,7 +88,7 @@ https://templatemo.com/tm-584-pod-talk
 
                     <div class="col-lg-12 col-12 text-center">
 
-                        <h2 class="mb-0">Kayıt Formu</h2>
+                        <h2 class="mb-0">Otel Ayarları</h2>
                     </div>
 
                 </div>
@@ -122,38 +97,10 @@ https://templatemo.com/tm-584-pod-talk
         <section class="contact-section section-padding pt-0">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-8 col-12 mx-auto">
                      <form action="#" method="post" class="custom-form contact-form" role="form">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12"> 
-                                    <div class="form-floating mt-0">
-                                        <select class="form-control" id="roleSelect" onchange="toggleVisibility();">
-                                            <option value="secim">Rol seçmek için tıkla</option>
-                                            <option value="Otel Sahibi">Otel Sahibi</option>
-                                            <option value="Veteriner">Veteriner</option>
-                                            <option value="Pati Dostu">Pati Dostu</option>
-                                        </select>
-                                        <label for="roleSelect">Rol </label>
-                                    </div>                                   
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <input type="name" name="name" id="name" 
-                                            class="form-control" placeholder="İsim" required="">
-
-                                        <label for="floatingInput">İsim</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <input type="phone" name="phone" id="phone" 
-                                            class="form-control" placeholder="Telefon Numarası" required="">
-
-                                        <label for="floatingInput">Telefon Numarası</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelTypeSection">
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelTypeSection">
                                     <div class="form-floating mt-0">
                                         <select class="form-control" id="hotelTypeSelect">
                                             <option value="secim" >Otel cinsini seçmek için tıkla</option>
@@ -164,32 +111,30 @@ https://templatemo.com/tm-584-pod-talk
                                         <label for="hotelTypeSelect">Otel cinsi</label>
                                     </div>                                   
                                 </div>
-                                
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="hotelNameSection">
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelNameSection">
                                     <div class="form-floating mt-0">
                                         <input type="text" name="Otelname" id="Otelname" class="form-control" placeholder="Otel adı" required="">
                                         <label for="Otelname">Otel Adı</label>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="priceSelect">
+                                <div class="col-lg-6 col-md-6 col-12"  id="hotelTypeSection">
                                     <div class="form-floating mt-0">
-                                        <select class="form-control" id="priceSelect">
-                                            <option value="secim" >seçmek için tıkla</option>
+                                        <select class="form-control" id="hotelTypeSelect">
+                                            <option value="fiyat" >seçmek için tıkla</option>
                                             <option value="fiyat">500 TL</option>
                                             <option value="fiyat">1000 TL</option>
                                         </select>
                                         <label for="hotelTypeSelect">Fiyat</label>
                                     </div>                                   
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-6 col-md-6 col-12 ">
                                     <div class="form-floating mt-0">
-                                        <select class="form-control select2" id="Konum" name="Konum" required="">
-                                          
-                                        </select>
-                                        <label for="Konum"></label>
-                                    </div>
+                                    <input type="text" id="datePicker" class="form-control" >
+                                    <label for="datePicker">Kapalı olduğunuz günleri seçin</label>
+                                    <option value=""></option>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-12" style="display: none;" id="documentUploadSection"> 
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12"  id="documentUploadSection"> 
                                     <div class="form-group mb-4">
                                         <label for="exampleFormControlFile1">Belge</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
@@ -197,19 +142,20 @@ https://templatemo.com/tm-584-pod-talk
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-group mb-4">
-                                        <label for="exampleFormControlFile1">Profil Fotoğrafı</label>
+                                        <label for="exampleFormControlFile1"> Otel Fotoğrafları</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-12" id="textareaSection">
+                                <div class="col-lg-12 col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Describe message here"></textarea>
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Describe message here"></textarea>
+
                                         <label for="floatingTextarea">Bilgileri buraya girebilirsiniz</label>
                                     </div>
                                 </div>
-                                
                                  <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Kayıt Ol</button>
+                                    <button type="submit" class="form-control">Güncelle</button>
                                 </div>
                                  
                             </div>
@@ -278,39 +224,6 @@ https://templatemo.com/tm-584-pod-talk
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      function toggleVisibility() {
-    var selectedRole = document.getElementById("roleSelect").value;
-    var uploadSection = document.getElementById("documentUploadSection");
-    var hotelNameSection = document.getElementById("hotelNameSection");
-    var hotelTypeSection = document.getElementById("hotelTypeSection");
-    var priceSelectSection = document.getElementById("priceSelect");
-    var textareaSection = document.getElementById("textareaSection"); // New line
-
-    // Reset visibility
-    uploadSection.style.display = 'none';
-    hotelNameSection.style.display = 'none';
-    hotelTypeSection.style.display = 'none';
-    priceSelectSection.style.display = 'none';
-    textareaSection.style.display = 'block'; // Default show
-
-    switch (selectedRole) {
-        case "Otel Sahibi":
-            uploadSection.style.display = 'block';
-            hotelNameSection.style.display = 'block';
-            hotelTypeSection.style.display = 'block';
-            priceSelectSection.style.display = 'block';
-            break;
-        case "Veteriner":
-            uploadSection.style.display = 'block';
-            break;
-        case "Pati Dostu":
-            textareaSection.style.display = 'none'; // Hide for Pati Dostu
-            break;
-    }
-}
-
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -341,11 +254,21 @@ https://templatemo.com/tm-584-pod-talk
         allowClear: true
     });
 });
-
-
-    </script> 
-
-    
+</script> 
+<!-- Flatpickr Scripts -->
+<script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/tr.js"></script>
+<script>
+    // Flatpickr initialization with specified options
+    flatpickr("#datePicker", {
+        mode: "multiple",
+        dateFormat: "Y-m-d",
+        defaultDate: ["2016-10-20", "2016-11-04"],
+        minDate: "today",
+        "locale": "tr"
+    });
+    flatpickr.l10ns.default.firstDayOfWeek = 1; // Start week on Monday
+</script>
 
 </body>
 
