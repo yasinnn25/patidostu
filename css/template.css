@@ -1245,3 +1245,11 @@ main {
 
 }
 
+.site-header-profil {
+  background-image: url('../images/templatemo-wave-header.jpg'), linear-gradient(#348CD2, #FFFFFF);;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 120px;
+}

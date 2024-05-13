@@ -29,11 +29,7 @@
 
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link href="css/templatemo-pod-talk.css" rel="stylesheet">
-    <!--
-TemplateMo 584 Pod Talk
-https://templatemo.com/tm-584-pod-talk
--->    
+    <link href="css/template.css" rel="stylesheet">    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
     <style>
         .select2-container--default .select2-selection--single {
@@ -71,6 +67,20 @@ https://templatemo.com/tm-584-pod-talk
         height: 500px; 
     }
 </style>
+<style>
+    #foter{
+        margin-left:80px;
+    }
+    #custom-logo-footer {
+        width: 300px;
+        height: auto;
+        margin-top: -80px;
+    }
+    .site-footer-link {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    </style>
 
 </head>
 
@@ -80,6 +90,9 @@ https://templatemo.com/tm-584-pod-talk
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
+                <a class="navbar-brand me-lg-5 me-0" href="index.html" >
+                    <img src="images/patidostulogo.png" class="logo-image img-fluid" id="custom-logo" alt="template pati dostu">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -120,410 +133,387 @@ https://templatemo.com/tm-584-pod-talk
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">İLETİŞİM</a>
                         </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="index.html">Çıkış yap</a></li>
-                            </ul>
-                        </li>
                     </ul>
+
+                    <div class="ms-4">
+                        <a href="signin.html" class="btn custom-btn custom-border-btn smoothscroll">Giriş Yap</a>
+                    </div>
                 </div>
             </div>
         </nav>
-
-
-
-        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+        <header class="site-header-profil d-flex flex-column justify-content-center align-items-center">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-lg-12 col-12 text-center">
-
-                        <h2 class="mb-0">Profil</h2>
-                    </div>
-
                 </div>
             </div>
         </header>
-
         <section class="section-padding" id="section_2">
-            <div class="container">
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-5 col-12 pe-lg-5">
-                        <div class="contact-info">
-                            <h3 class="mb-4">Bilgilerim</h3>
-
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">İsim:</strong>
-                                <span>Ali Dursun</span>
-                            </p>
-
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Telefon:</strong>
-                                <span>0 545 445 47 47</span>
-                            </p>
-
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Email:</strong>
-                                <a href="#">patidostu@gmail.com</a>
-                            </p>
-
-                            <p class="d-flex">
-                                <strong class="d-inline me-4">Konum:</strong>
-                                <span>İZMİR</span>
-                            </p>
-                            <a href="profilayar.html">
-                                <button>Düzenle</button>
-                            </a>
-                        </div>
-                    </div>
-                    
-
-                    <div class="col-lg-5 col-12 mt-5 mt-lg-0">
-                        <img class="kullanıcı"
-                            src="images/staff-5.jpg"
-                            width="40%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section section-padding pb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-12 mx-auto">
-                        <div class="section-title-wrap mb-5">
-                            <h4 class="section-title">Otellerim</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-       
-        <section class="section-padding" id="section_2">
-            <div class="container">
-                <div class="row justify-content-center">
-
-                    
-
-                    <div class="col-lg-5 col-12 mt-0 mt-lg-0">
-                        <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <!-- Indicators/dots -->
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
-                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
-                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
-                            </div>
-                    
-                            <!-- The slideshow/carousel -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/podcast/dog-pensions-19.png" class="d-block w-100" alt="Staff Image 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/otel2.jpg" class="d-block w-100" alt="Staff Image 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/otel3.webp" class="d-block w-100" alt="Staff Image 3">
-                                </div>
-                            </div>
-                    
-                            <!-- Left and right controls/icons -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
-
-                            <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 col-12 pe-lg-5">
-                        <div class="contact-info">
-                            <h3 class="mb-1">Zen Pet Hotel</h3>
-                            <h5 class="mb-4">Köpek Oteli</h5>
-                            <p>Evcil patili dostlarımızı sevgiyle misafir ediyoruz.Bize 7/24 ulaşabilirsiniz</p>
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Fiyat:</strong>
-                                <span>500 TL</span>
-                            </p>
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Sahip:</strong>
-                                <span>Ahmet Dursun</span>
-                            </p>
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Telefon:</strong>
-                                <span>0 545 445 47 47</span>
-                            </p>
-                            <p class="d-flex">
-                                <strong class="d-inline me-4">Konum:</strong>
-                                <span>İZMİR</span>
-                            </p>
-                            <a href="otelayar.html">
-                                <button>Düzenle</button>
-                            </a>
-                                <button style="background-color: red;">Sil</button>
-                        </div>
-                    </div>
-                    
-
-                </div>
-            </div>
-        </section>
-        <section class="contact-section section-padding pb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-12 mx-auto">
-                        <div class="section-title-wrap mb-5">
-                            <h4 class="section-title">İlanlarım</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-          
+    </section>
         
-
-        <section class="section-padding" id="section_2">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 col-12 mt-0 mt-lg-0">
-                        <div id="adsCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <!-- Indicators/dots -->
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
-                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
-                                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+        <div id="contentArea"> 
+            <section class="section-padding" id="section_2">
+                <div class="container">
+                    <div class="row justify-content-center">
+    
+                        <div class="col-lg-5 col-12 pe-lg-5">
+                            <div class="contact-info">
+                                <h3 class="mb-4">Bilgilerim</h3>
+    
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">İsim:</strong>
+                                    <span>Ali Dursun</span>
+                                </p>
+    
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Telefon:</strong>
+                                    <span>0 545 445 47 47</span>
+                                </p>
+    
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Email:</strong>
+                                    <a href="#">patidostu@gmail.com</a>
+                                </p>
+    
+                                <p class="d-flex">
+                                    <strong class="d-inline me-4">Konum:</strong>
+                                    <span>İZMİR</span>
+                                </p>
+                                <a href="profilayar.html">
+                                    <button>Düzenle</button>
+                                </a>
                             </div>
-                    
-                            <!-- The slideshow/carousel -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/golden1.webp" class="d-block w-100" alt="Staff Image 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/golden2.jpg" class="d-block w-100" alt="Staff Image 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/golden3.jpg" class="d-block w-100" alt="Staff Image 3">
-                                </div>
-                            </div>
-                    
-                            <!-- Left and right controls/icons -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#adsCarousel" data-bs-slide="prev">
-                            <button class="carousel-control-next" type="button" data-bs-target="#adsCarousel" data-bs-slide="next">
-
-
                         </div>
-                    </div>
-
-                    <div class="col-lg-5 col-12 pe-lg-5">
-                        <div class="contact-info">
-                            <h3 class="mb-1">Altın</h3>
-                            <h5 class="mb-4">Golden</h5>
-                            <p >Yabancılardan korkan uslu bir köpektir.Eğer gördüyseniz lütfen benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin</p>
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Sahip:</strong>
-                                <span>Ahmet Dursun</span>
-                            </p>
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Tasma:</strong>
-                                <span>Var</span>
-                            </p>
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Yaş:</strong>
-                                <span>3-5 arası</span>
-                            </p>
-                            <p class="d-flex border-bottom pb-3 mb-4">
-                                <strong class="d-inline me-4">Telefon:</strong>
-                                <span>0 545 445 47 47</span>
-                            </p>
-                            <p class="d-flex">
-                                <strong class="d-inline me-4">Konum:</strong>
-                                <span>İZMİR</span>
-                            </p>
-                            <a href="ilanayar.html">
-                                <button>Düzenle</button>
-                            </a>
-                            <button class="complete-button">Tamamlandı</button>
-                            <button style="background-color: red;">Sil</button>
+                        
+    
+                        <div class="col-lg-5 col-12 mt-5 mt-lg-0">
+                            <img class="kullanıcı"
+                                src="images/staff-5.jpg"
+                                width="40%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
+    
                     </div>
-                    
-
                 </div>
-            </div>
-        </section>
-
-        <section class="contact-section section-padding pt-5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-8 col-12 mx-auto">
-                        <div class="section-title-wrap mb-5">
-                            <h4 class="section-title">İlan ver</h4>
-                        </div>
-
-                        <form action="#" method="post" class="custom-form contact-form" role="form">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <select name="ilan" id="ilan" class="form-control">
-                                            <option value="secim">seçmek için tıkla</option>
-                                            <option value="kedi">Kayıp</option>
-                                            <option value="köpek">Sahiplendirme</option>
-                                        </select>
-                                        <label for="pet-type">İlan Türü</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating">
-                                        <input type="text" name="full-name" id="full-name" class="form-control"
-                                            placeholder="Full Name" required="">
-
-                                        <label for="floatingInput">Evcil Hayvanın İsmi</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <select name="pet-type" id="pet-type" class="form-control">
-                                            <option value="secim">seçmek için tıkla</option>
-                                            <option value="kedi">Kedi</option>
-                                            <option value="köpek">Köpek</option>
-                                        </select>
-                                        <label for="pet-type">Evcil Hayvan Cinsi</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <select name="pet-type" id="pet-type" class="form-control">
-                                            <option value="secim">seçmek için tıkla</option>
-                                            <option value="kedi">Buldog</option>
-                                            <option value="köpek">Labrador</option>
-                                            <option value="köpek">Golden</option>
-
-                                        </select>
-                                        <label for="pet-type">Türü</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <select name="tasma" id="tasma" class="form-control">
-                                            <option value="secim">seçmek için tıkla</option>
-                                            <option value="kedi">Var</option>
-                                            <option value="köpek">Yok</option>
-                                        </select>
-                                        <label for="pet-type">Tasması var mı?</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <select name="tasma" id="tasma" class="form-control">
-                                            <option value="secim">seçmek için tıkla</option>
-                                            <option value="yas">0-6 aylık</option>
-                                            <option value="yas">6-12 aylık</option>
-                                            <option value="yas">1-3 yaşında</option>
-                                            <option value="yas">3-5 yaşında</option>
-                                            <option value="yas">5+</option>
-
-                                        </select>
-                                        <label for="pet-type">Kaç yaşında</label>
-                                    </div>
-                                </div>
-                               <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-floating mt-0">
-                                        <select class="form-control select2" id="Konum" name="Konum" required="">
-                                          
-                                        </select>
-                                        <label for="Konum"></label>
-                                    </div>
-                                </div>
-                               
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlFile1">Fotoğraf</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-12">
-                                    <div class="form-floating mt-3">
-                                        <textarea class="form-control" id="message" name="message"
-                                            placeholder="Describe message here"></textarea>
-                                            <label for="floatingTextarea">Bilgileri buraya yazabilirsiniz</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Kaydet</button>
-                                </div>
-
+            </section>
+    
+            <section class="contact-section section-padding pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="section-title-wrap mb-5">
+                                <h4 class="section-title">Otellerim</h4>
                             </div>
-                        </form>
+                        </div>
                     </div>
-
                 </div>
-            </div>
-        </section>
+            </section>
+           
+            <section class="section-padding" id="section_2">
+                <div class="container">
+                    <div class="row justify-content-center">
+    
+                        
+    
+                        <div class="col-lg-5 col-12 mt-0 mt-lg-0">
+                            <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+                                </div>
+                        
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/dog-pensions-19.png" class="d-block w-100" alt="Staff Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/otel2.jpg" class="d-block w-100" alt="Staff Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/otel3.webp" class="d-block w-100" alt="Staff Image 3">
+                                    </div>
+                                </div>
+                        
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+    
+                                <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+    
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-5 col-12 pe-lg-5">
+                            <div class="contact-info">
+                                <h3 class="mb-1">Zen Pet Hotel</h3>
+                                <h5 class="mb-4">Köpek Oteli</h5>
+                                <p>Evcil patili dostlarımızı sevgiyle misafir ediyoruz.Bize 7/24 ulaşabilirsiniz</p>
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Fiyat:</strong>
+                                    <span>500 TL</span>
+                                </p>
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Sahip:</strong>
+                                    <span>Ahmet Dursun</span>
+                                </p>
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Telefon:</strong>
+                                    <span>0 545 445 47 47</span>
+                                </p>
+                                <p class="d-flex">
+                                    <strong class="d-inline me-4">Konum:</strong>
+                                    <span>İZMİR</span>
+                                </p>
+                                <a href="otelayar.html">
+                                    <button>Düzenle</button>
+                                </a>
+                                    <button style="background-color: red;">Sil</button>
+                            </div>
+                        </div>
+                        
+    
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section section-padding pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="section-title-wrap mb-5">
+                                <h4 class="section-title">İlanlarım</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+              
+            
+    
+            <section class="section-padding" id="section_2">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-12 mt-0 mt-lg-0">
+                            <div id="adsCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <!-- Indicators/dots -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+                                </div>
+                        
+                                <!-- The slideshow/carousel -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/golden1.webp" class="d-block w-100" alt="Staff Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/golden2.jpg" class="d-block w-100" alt="Staff Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/golden3.jpg" class="d-block w-100" alt="Staff Image 3">
+                                    </div>
+                                </div>
+                        
+                                <!-- Left and right controls/icons -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#adsCarousel" data-bs-slide="prev">
+                                <button class="carousel-control-next" type="button" data-bs-target="#adsCarousel" data-bs-slide="next">
+    
+    
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-5 col-12 pe-lg-5">
+                            <div class="contact-info">
+                                <h3 class="mb-1">Altın</h3>
+                                <h5 class="mb-4">Golden</h5>
+                                <p >Yabancılardan korkan uslu bir köpektir.Eğer gördüyseniz lütfen benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin benimle iletişime geçin</p>
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Sahip:</strong>
+                                    <span>Ahmet Dursun</span>
+                                </p>
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Tasma:</strong>
+                                    <span>Var</span>
+                                </p>
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Yaş:</strong>
+                                    <span>3-5 arası</span>
+                                </p>
+                                <p class="d-flex border-bottom pb-3 mb-4">
+                                    <strong class="d-inline me-4">Telefon:</strong>
+                                    <span>0 545 445 47 47</span>
+                                </p>
+                                <p class="d-flex">
+                                    <strong class="d-inline me-4">Konum:</strong>
+                                    <span>İZMİR</span>
+                                </p>
+                                <a href="ilanayar.html">
+                                    <button>Düzenle</button>
+                                </a>
+                                <button class="complete-button">Tamamlandı</button>
+                                <button style="background-color: red;">Sil</button>
+                            </div>
+                        </div>
+                        
+    
+                    </div>
+                </div>
+            </section>
+    
+            <section class="contact-section section-padding pt-5">
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="section-title-wrap mb-5">
+                                <h4 class="section-title">İlan ver</h4>
+                            </div>
+    
+                            <form action="#" method="post" class="custom-form contact-form" role="form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating mt-0">
+                                            <select name="ilan" id="ilan" class="form-control">
+                                                <option value="secim">seçmek için tıkla</option>
+                                                <option value="kedi">Kayıp</option>
+                                                <option value="köpek">Sahiplendirme</option>
+                                            </select>
+                                            <label for="pet-type">İlan Türü</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating">
+                                            <input type="text" name="full-name" id="full-name" class="form-control"
+                                                placeholder="Full Name" required="">
+    
+                                            <label for="floatingInput">Evcil Hayvanın İsmi</label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating mt-0">
+                                            <select name="pet-type" id="pet-type" class="form-control">
+                                                <option value="secim">seçmek için tıkla</option>
+                                                <option value="kedi">Kedi</option>
+                                                <option value="köpek">Köpek</option>
+                                            </select>
+                                            <label for="pet-type">Evcil Hayvan Cinsi</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating mt-0">
+                                            <select name="pet-type" id="pet-type" class="form-control">
+                                                <option value="secim">seçmek için tıkla</option>
+                                                <option value="kedi">Buldog</option>
+                                                <option value="köpek">Labrador</option>
+                                                <option value="köpek">Golden</option>
+    
+                                            </select>
+                                            <label for="pet-type">Türü</label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating mt-0">
+                                            <select name="tasma" id="tasma" class="form-control">
+                                                <option value="secim">seçmek için tıkla</option>
+                                                <option value="kedi">Var</option>
+                                                <option value="köpek">Yok</option>
+                                            </select>
+                                            <label for="pet-type">Tasması var mı?</label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating mt-0">
+                                            <select name="tasma" id="tasma" class="form-control">
+                                                <option value="secim">seçmek için tıkla</option>
+                                                <option value="yas">0-6 aylık</option>
+                                                <option value="yas">6-12 aylık</option>
+                                                <option value="yas">1-3 yaşında</option>
+                                                <option value="yas">3-5 yaşında</option>
+                                                <option value="yas">5+</option>
+    
+                                            </select>
+                                            <label for="pet-type">Kaç yaşında</label>
+                                        </div>
+                                    </div>
+                                   <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating mt-0">
+                                            <select class="form-control select2" id="Konum" name="Konum" required="">
+                                              
+                                            </select>
+                                            <label for="Konum"></label>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlFile1">Fotoğraf</label>
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-12">
+                                        <div class="form-floating mt-3">
+                                            <textarea class="form-control" id="message" name="message"
+                                                placeholder="Describe message here"></textarea>
+                                                <label for="floatingTextarea">Bilgileri buraya yazabilirsiniz</label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-4 col-12 ms-auto">
+                                        <button type="submit" class="form-control">Kaydet</button>
+                                    </div>
+    
+                                </div>
+                            </form>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+        </div>
+        
     </main>
     
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                  >
+            <div class="row" id="foter">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <h3 class="site-footer-title mb-3" >İletişim</h3>
+                    <p class="mb-2"><strong class="d-inline me-2">Telefon:</strong> 0 545 445 47 47</p>
+                    <p>
+                        <strong class="d-inline me-2">Email:</strong>
+                        <a href="mailto:patidostu@gmail.com">patidostu@gmail.com</a>
+                    </p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="site-footer-thumb mb-4 pb-2">
-                        <div class="d-flex flex-wrap">
-                            
-                        </div>
-                    </div>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container pt-5">
-            <div class="row align-items-center">
-
-                <div class="col-lg-2 col-md-3 col-12">
-                    
-                </div>
-
-                <div class="col-lg-7 col-md-9 col-12">
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Homepage</a>
+    
+                <div class="col-lg-3 col-md-6 col-12 mb-5">
+                    <h3 class="site-footer-title mb-3">Sosyal Medya</h3>
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
                         </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Help Center</a>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
                         </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact Us</a>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
                         </li>
                     </ul>
                 </div>
-
-                <div class="col-lg-3 col-12">
-                    <p class="copyright-text mb-0">Copyright © 2036 
-                        <br><br>
-                        
+                <div class="col-lg-6 col-md-12 col-12">
+                        <a class="navbar-brand me-lg-5 me-0 pt-0" href="index.html">
+                            <img src="images/patidostulogo.png" class="logo-image img-fluid" id="custom-logo-footer" alt="template pati dostu">
+                        </a>
                 </div>
             </div>
         </div>
+    
+        
     </footer>
+    
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
@@ -619,9 +609,6 @@ https://templatemo.com/tm-584-pod-talk
         });
     });
 </script>
-
-
-
 </body>
 
 </html>

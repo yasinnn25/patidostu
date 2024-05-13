@@ -1104,6 +1104,67 @@ input.btn_main_3::placeholder {
      /* İçerikleri yatay olarak dağıtır */
    }
    
+/* Desktop and larger screens */
+@media (min-width: 992px) {
+     #custom-logo {
+         width: 150px; /* Or your desired size */
+         height: auto; /* Maintain aspect ratio */
+     }
+ }
+ 
+ /* Tablets */
+ @media (min-width: 768px) and (max-width: 991px) {
+     #custom-logo {
+         width: 120px; /* Adjust size as needed */
+         height: auto;
+     }
+ }
+ 
+ /* Smaller devices */
+ @media (max-width: 767px) {
+     #custom-logo {
+         width: 90px; /* Adjust size as needed */
+         height: auto;
+     }
+ }
+ 
+
+ body {
+     font-family: Arial, sans-serif;
+ }
+ 
+ .menu {
+     width: 300px;
+     background-color: #f0f0f0;
+     border: 1px solid #ddd;
+     padding: 10px;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ 
+ .menu-item {
+     padding: 10px;
+     border-radius: 5px;
+     margin-bottom: 5px;
+     cursor: pointer;
+ }
+ 
+ .menu-item:last-child {
+     margin-bottom: 0;
+ }
+ 
+ .menu-item:hover {
+     background-color: #e9e9e9;
+ }
+ 
+ .menu-item.active {
+     background-color: #0084ff;
+     color: white;
+ }
+ 
+ .fas {
+     margin-right: 10px;
+ }
+ 
  
  
  
